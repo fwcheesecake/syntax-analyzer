@@ -1,0 +1,4 @@
+#!/bin/zsh
+jflex -d model analyzers/Lexer.flex
+cup -expect 1 -destdir model -parser Parser ./analyzers/Parser.cup
+# mv Parser.java Symbols.java ./analyzers
